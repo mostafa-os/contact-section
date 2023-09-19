@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.page {
+    height: 105vh;
+    background: #eee;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: #0fdb9b;
+    border-radius: 50%;
+    left: 75px;
+    top: 45px;
+}
+
+.page .left {
+    width: 25%;
+    height: 600px;
+    background: #3729b2;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 40px 70px;
+    position: relative;
+}
+
+.page .left .icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.page .left .icon::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 25px;
+    background: #3729b2;
+    top: 15px;
+    left: 9px;
+}
+
+.page .left .icon::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    border: 6px solid transparent;
+    border-left-color: #3729b2;
+    border-bottom-color: #3729b2;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+.page .left ul {
+    list-style: none;
+    margin: 35px 0 60px;
+    color: white;
+}
+
+.page .left ul li {
+    font-size: 12px;
+    margin-bottom: 8px;
+    padding: 10px;
+    margin-left: -10px;
+    width: 100px;
+}
+
+.page .left ul li:hover {
+    border-radius: 5px;
+    background-color: #4d40b9;
+}
+
+.page .left ul li.active {
+    border-radius: 5px;
+    background: #4d40b9;
+}
+
+.page .left .offer .need {
+    font-size: 12px;
+    color: #9e9e9e;
+    margin-bottom: 20px;
+}
+
+.page .left .offer .need span {
+    color: white;
+    font-size: 24px;
+}
+
+.page .left .offer .want {
+    font-size: 10px;
+    color: white;
+    width: 200px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.page .left .offer p:last-of-type {
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+
+.page .left .offer p:last-of-type::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    background: white;
+    top: 50%;
+    left: 115px;
+}
+
+.page .left .offer p:last-of-type::after {
+    content: "";
+    position: absolute;
+    border: 3px solid transparent;
+    border-left-color: white;
+    top: 37%;
+    left: 126px;
+}
+
+.page .right {
+    width: 730px;
+    height: 100%;
+    background: #3729b2;
+    position: relative;
+}
+
+.page .right .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    width: 665px;
+    height: 600px;
+    padding: 50px 50px 80px;
+    display: flex;
+    gap: 42px;
+}
+
+.page .right .container .first h2 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.page .right .container .first p:first-of-type {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.page .right .container .first form input,
+textarea {
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    padding: 10px 15px;
+    margin: 15px 0;
+    width: 257px;
+    outline: none;
+}
+
+.page .right .container .first form textarea {
+    resize: none;
+}
+
+.page .right .container .first .last {
+    display: flex;
+    color: #3f51b5;
+}
+
+.page .right .container .first .last i {
+    margin-right: 7px;
+}
+
+.page .right .container .second .box {
+    margin: 152px 0;
+    transform: translateY(-32%);
+}
+
+.page .right .container .second .box h3 {
+    font-weight: 900;
+    font-size: 17px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.page .right .container .second .box p.paragraph {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.page .right .container .second .box p.number {
+    margin-bottom: 10px;
+    color: #3f51b5;
+    font-size: 13px;
+}
+
+.page .right .container .second .box p.info {
+    color: #3f51b5;
+    font-size: 13px;
+
+}
+
+.page .right .container i.ilast {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #0fdb9b;
+    font-size: 125px;
+}
